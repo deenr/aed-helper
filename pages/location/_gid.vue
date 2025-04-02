@@ -36,11 +36,6 @@ export default defineComponent({
                 this.$route.params.gid
             )
         },
-        getDirectionsUrl() {
-            if (!this.location?.latitude || !this.location?.longitude)
-                return '#'
-            return `https://www.google.com/maps/dir/?api=1&destination=${this.location.latitude},${this.location.longitude}`
-        },
     },
     methods: {
         toggleFavorite() {
